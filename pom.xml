@@ -3,10 +3,10 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.qaprosoft</groupId>
-  <artifactId>carina-demo</artifactId>
+  <artifactId>Carina_Test_Rail</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-  <name>Carina Demo</name>
+  <name>Carina Test Rail</name>
   <url>http://www.qaprosoft.com/</url>
 
   <properties>

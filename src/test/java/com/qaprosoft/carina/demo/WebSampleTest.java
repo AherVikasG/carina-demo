@@ -45,7 +45,7 @@ import com.qaprosoft.carina.demo.gui.pages.NewsPage;
  * @author qpsdemo
  */
 public class WebSampleTest extends AbstractTest {
-    @Test(dataProvider = "SingleDataProvider", description = "JIRA#AUTO-0008")
+   /* @Test(dataProvider = "SingleDataProvider", description = "JIRA#AUTO-0008")
     @MethodOwner(owner = "qpsdemo")
     @TestPriority(Priority.P3)
     @TestTag(name = "area test", value = "data provider")
@@ -71,9 +71,9 @@ public class WebSampleTest extends AbstractTest {
         Assert.assertEquals(productInfoPage.readCamera(), camera, "Invalid camera info!");
         Assert.assertEquals(productInfoPage.readRam(), ram, "Invalid ram info!");
         Assert.assertEquals(productInfoPage.readBattery(), battery, "Invalid battery info!");
-    }
+    }*/
 
-
+/*
     @Test(description = "JIRA#AUTO-0009")
     @MethodOwner(owner = "qpsdemo")
     @TestPriority(Priority.P1)
@@ -93,10 +93,11 @@ public class WebSampleTest extends AbstractTest {
         Assert.assertEquals(specs.get(0).readSpec(SpecType.ANNOUNCED), "2015, November");
         Assert.assertEquals(specs.get(1).readSpec(SpecType.ANNOUNCED), "2015, June");
         Assert.assertEquals(specs.get(2).readSpec(SpecType.ANNOUNCED), "2017, June");
-    }
+    }*/
     
     @Test(description = "JIRA#AUTO-0010")
     @MethodOwner(owner = "qpsdemo")
+    @TestRailCases(testCasesId = "1")
     public void testNewsSearch() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();

@@ -99,6 +99,8 @@ public class WebSampleTest extends AbstractTest {
     @MethodOwner(owner = "qpsdemo")
     @TestRailCases(testCasesId = "1")
     public void testNewsSearch() {
+    	
+    	
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
